@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuong", "Cuong.csproj", "{02D57B06-652D-432E-BD8F-C30015B193A7}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai09", "bai09\bai09.csproj", "{A5F5832A-0245-4BAD-B692-C42E2FC5D47D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai10", "bai10\bai10.csproj", "{3E046FD5-3FA1-4058-87AD-E5267611ECBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bai5_mang", "bai5_mang\bai5_mang.csproj", "{7410B224-A9FD-451F-90E8-E71718A856B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{3E046FD5-3FA1-4058-87AD-E5267611ECBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E046FD5-3FA1-4058-87AD-E5267611ECBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E046FD5-3FA1-4058-87AD-E5267611ECBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7410B224-A9FD-451F-90E8-E71718A856B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7410B224-A9FD-451F-90E8-E71718A856B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7410B224-A9FD-451F-90E8-E71718A856B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7410B224-A9FD-451F-90E8-E71718A856B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
