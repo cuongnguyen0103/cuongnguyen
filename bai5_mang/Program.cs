@@ -68,6 +68,108 @@
                    
                 }
             }
+            // 4. In cac phan tu duy nhat
+            Console.WriteLine("4. In cac phan tu duy nhat");
+            Console.WriteLine("Cac phan tu duy nhat la: ");
+            for (int i = 0; i<n;i++)
+            {
+                dem=0;
+                // cac pt giong nhau sau vi tri hien tai
+                for (int j = i+1;j<n;j++)
+                {
+                    if ((arr[i] == arr[j]))
+                        {
+                        dem++;
+                        }
+                }
+                // cac pt giong nhau sau vi tri hien tai
+                for (int k=0;k<i-1;k++)
+                {
+                    if (arr[i] == arr[k])
+                    {
+                        dem++;
+                    }
+                }
+                if (dem==0)
+                {
+                    Console.Write(arr[i] + " ");
+                }
+            }
+            Console.WriteLine();
+            // 5. Chia mang ban dau thanh mang chan va mang le
+            Console.WriteLine("5. Chia mang ban dau thanh mang chan va mang le");
+            int[] arr_chan = new int[n];
+            int[] arr_le = new int[n];
+            int vt_chan = 0, vt_le = 0;
+            for (int i = 0;i < n;i++)
+            {
+                if (arr[i]%2==0)
+                {
+                    arr_chan[vt_chan] = arr[i];
+                    vt_chan++;
+                }
+                else
+                {
+                    arr_le[vt_le] = arr[i];
+                    vt_le++;
+                }
+            }
+            Console.WriteLine("Cac pt mang chan: ");
+            for(int i = 0;i<vt_chan;i++)
+            {
+                Console.Write(arr_chan[i] +" ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Cac pt mang le: ");
+            for (int i = 0; i < vt_le; i++)
+            {
+                Console.Write(arr_le[i] + " ");
+            }
+            Console.WriteLine();
+            // 6. Sap xep mang theo thu tu giam dan
+            Console.WriteLine("6. Sap xep mang theo thu tu giam dan");
+            int tmp = 0;
+            int[] arr_giam = arr;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (arr_giam[i] < arr_giam[j])
+                    {
+                        tmp = arr_giam[i];
+                        arr_giam[i] = arr_giam[j];
+                        arr_giam[j] = tmp;
+                    }
+                }
+            }
+            Console.WriteLine("Mang arr theo th tu giam dan: ");
+            for ( int i = 0; i < n;i++)
+            {
+                Console.Write(arr_giam[i] + " ");
+            }
+            Console.WriteLine();
+            // 7. Tim kiem phan tu lon thu 2 cua mang ban dau
+            Console.WriteLine("7. Tim kiem phan tu lon thu 2 cua mang ban dau");
+            int biggestNum = arr[0];
+            int secondNum = arr[0];
+            for (int i = 0;i<n;i++)
+            {
+                if (biggestNum < arr[i])
+                    biggestNum = arr[i];
+                if (secondNum > arr[i])
+                    secondNum = arr[i];
+            }
+            for (int i = 0;i<n;i++)
+            {
+                if (arr[i] == biggestNum)
+                    continue;
+                else
+                {
+                    if (secondNum < arr[i])
+                        secondNum = arr[i];
+                }
+            }
+            Console.WriteLine("Phan tu lon thu hai cua mang arr la: {0}",secondNum);
         }
     }
 }
