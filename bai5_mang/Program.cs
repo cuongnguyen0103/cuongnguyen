@@ -37,8 +37,9 @@
             {
                 Console.Write(arr_reverse[i] + " ");
             }
+            Console.WriteLine();
             // 3.Tìm số phần tử giống nhau trong mảng và hiển thị số lượng giống nhau ra màn hình.
-           Console.WriteLine("3. Tìm số phần tử giống nhau trong mảng và hiển thị số lượng giống nhau ra màn hình.");
+            Console.WriteLine("3. Tìm số phần tử giống nhau trong mảng và hiển thị số lượng giống nhau ra màn hình.");
             int[] arr_ = new int[n];
             for (int i = 0;i<n; i++)
             {
